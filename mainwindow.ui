@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="actionNowy"/>
+    <addaction name="actionOtw_rz"/>
+    <addaction name="actionZapisz"/>
+   </widget>
+   <addaction name="menuPlik"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNowy"/>
+   <addaction name="actionOtw_rz"/>
+   <addaction name="actionZapisz"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNowy">
+   <property name="icon">
+    <iconset resource="ikony.qrc">
+     <normaloff>:/new/ikony/New.png</normaloff>:/new/ikony/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nowy</string>
+   </property>
+  </action>
+  <action name="actionOtw_rz">
+   <property name="icon">
+    <iconset resource="ikony.qrc">
+     <normaloff>:/new/ikony/Open.png</normaloff>:/new/ikony/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Otworz</string>
+   </property>
+  </action>
+  <action name="actionZapisz">
+   <property name="icon">
+    <iconset resource="ikony.qrc">
+     <normaloff>:/new/ikony/Save.png</normaloff>:/new/ikony/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zapisz</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ikony.qrc"/>
+ </resources>
+ <connections/>
+</ui>
